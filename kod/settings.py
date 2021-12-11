@@ -26,6 +26,8 @@ SECRET_KEY = 'django-insecure-lx6y%o%x&_cm3d)ym&ymo)me!&86(0)f%p)mgbnkfuy%6w=_n#
 DEBUG = True
 
 ALLOWED_HOSTS = []
+import os
+SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
 
 
 # Application definition
@@ -37,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'blog',
 ]
 
 MIDDLEWARE = [
