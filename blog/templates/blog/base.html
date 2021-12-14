@@ -35,7 +35,7 @@
             <a href="{% url 'blog-home' %}">Django-blog</a>
             <button class="navbar-toggler" type="button" data-togle="collapse" data-target="#navbarTogle" aria-controls="navbarTogle" aria-expanded="false" aria-label="Toggle navigation">
 
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggle-icon"></span>
 
             </button>
 
@@ -45,8 +45,8 @@
                     <a href="{% url 'blog-about' %}" class="nav-item nav-link">About</a>
                 </div>
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="#">Home</a>
-                    <a href="#" class="nav-item nav-link">About</a>
+{#                    <a class="nav-item nav-link" href="#">Home</a>#}
+{#                    <a href="#" class="nav-item nav-link">About</a>#}
                 </div>
             </div>
         </div>
@@ -54,10 +54,10 @@
 </header>
 
 <main role="row">
-    <div class="col-md-8">
+    <div class="col-md-5">
         {% block content %}{% endblock %}
     </div>
-        <div class="col-md-4">
+        <div class="col-md-4" >
             <div class="content-section">
                 <h3>Our Sidebar</h3>
                 <p class="text-muted">You can put any information here youd like
