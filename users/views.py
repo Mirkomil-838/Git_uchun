@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 
 # Create your views here.
 from django.contrib import messages
@@ -12,7 +12,7 @@ def register(request):
         if form.is_valid():
             form.save()
             username=form. cleaned_data.get['username']
-            messages.success(request, f'Account created for {username}!')
+            messages.success(request, 'Account created for')
             return redirect('blog-home')
     else:
         form=UserRegisterForm()
